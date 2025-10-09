@@ -1,27 +1,27 @@
 import Content from "@/lib/container/Content";
 
 import type { Metadata, Viewport } from 'next'
-import styles from '../QrCodePage.module.css';
+import styles from '../Page.module.css';
 import Tools from "../_components/Tools";
 
 export const metadata: Metadata = {
-    title: "Kyle Klus | QR Code Generator",
-    description: "A simple QR Code generator.",
+    title: "Kyle Klus | TOOL NAME",
+    description: "A simple TOOL NAME.",
     authors: [{ name: "Kyle Klus", url: "https://kyleklus.de" }],
-    keywords: ["qr code", "qr code generator", "kyle klus", "tools", "online tools", "free tools",],
+    keywords: ["qr code", "tool name", "kyle klus", "tools", "online tools", "free tools",],
     creator: "Kyle Klus",
     publisher: "Kyle Klus",
-    abstract: "A simple QR Code generator.",
-    applicationName: "QR Code Generator",
+    abstract: "A simple TOOL NAME.",
+    applicationName: "TOOL NAME",
     category: "tools",
-    classification: "qr code generator",
+    classification: "tool name",
     openGraph: {
         type: "website",
         locale: "en_US",
         countryName: "US",
         url: "https://kyleklus.de/qr-code-generator/en",
-        title: "Kyle Klus | QR Code Generator",
-        description: "A simple QR Code generator.",
+        title: "Kyle Klus | TOOL NAME",
+        description: "A simple TOOL NAME.",
     },
 }
 
@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 export default function Page() {
     return (
         <Content className={[styles.textToolsPage, 'dotted'].join(' ')}>
-            <h1>QR Code Generator</h1>
+            <h1>TOOL NAME</h1>
             <Tools locale="en" />
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '1.5rem' }}>
                 <div style={{ fontSize: 'large' }}>Like this tool?</div>

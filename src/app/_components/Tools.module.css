@@ -56,73 +56,9 @@
     width: 100%;
 }
 
-.colorPicker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.colorPicker.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.colorModes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.colorModeOption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-}
-
-.colorModeOption label,
-.colorModeOption input {
-    cursor: pointer;
-}
-
-.colorModeOption label {
-    text-wrap: nowrap;
-}
-
-.colorPicker .swatch {
-    width: 2rem;
-    height: 1.5rem;
-    outline: none;
-    border: 1px solid var(--bg-color-50);
-    border-radius: 4px;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-    box-shadow: var(--shadowElevation_1);
-}
-
-.colorPicker .swatch:hover {
-    outline: none;
-    border-color: var(--bg-color-70);
-}
-
 .divider {
     width: 1px;
     height: 2rem;
     background-color: var(--bg-color-50);
     border: none;
-}
-
-.qrCodeArea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.qrCodeArea svg {
-    box-shadow: var(--shadowElevation_3);
 }
