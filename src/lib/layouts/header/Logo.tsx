@@ -1,24 +1,23 @@
-/** @format */
-
-import { basePath } from '@/app/layout';
-import styles from './Logo.module.css';
 import Image from 'next/image';
+
+import styles from './Logo.module.css';
+import logo from './KK_Logo.svg'
+import { defaultSiteConfig } from '@/app/defaultSiteConfig';
 
 export default function Logo() {
   return (
     <a
-      href="https://kyleklus.de/"
+      href={defaultSiteConfig.url}
       className={[styles.logoWrapper].join(' ')}
     >
       <Image
-        src={basePath + "/KK_Logo.svg"}
+        src={logo}
         alt="KK Logo"
         width={'42'}
         height={'42'}
         quality={100}
-        className={[].join(' ')}
-      ></Image>
-      <p>Kyle Klus</p>
+      />
+      <span>Kyle Klus</span>
     </a>
   );
 }

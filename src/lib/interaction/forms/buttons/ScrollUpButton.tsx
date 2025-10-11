@@ -1,5 +1,4 @@
 /** @format */
-import { basePath } from '@/app/layout';
 import styles from './ScrollUpButton.module.css';
 import Image from 'next/image';
 
@@ -19,7 +18,7 @@ export default function ScrollUpButton(
         if (top) { top.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" }); }
       }}
     >
-      <Image id={'scroll-up-button-image'} className={[styles.image].join(' ')} alt='ScrollUpArrow' src={basePath + '/up-arrow.svg'} width={22} height={22}></Image>
+      <Image id={'scroll-up-button-image'} className={[styles.image].join(' ')} alt='ScrollUpArrow' src={process.env.basePath + '/up-arrow.svg'} width={22} height={22}></Image>
       {props.children}
     </button>
   );

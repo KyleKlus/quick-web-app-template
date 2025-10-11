@@ -48,6 +48,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
@@ -62,3 +63,19 @@
     background-color: var(--bg-color-50);
     border: none;
 }
+
+@media (max-width: 700px) {
+    .tools {
+        width: 100%;
+    }
+
+    .toolPage {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        padding: 2rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {}

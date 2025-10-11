@@ -1,6 +1,13 @@
-.textToolsPage {
-    padding: 2rem 0rem 4rem 0rem;
+.toolPage {
     gap: 1.5rem;
+}
+
+.donationContainer {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 .donateButton {
@@ -19,5 +26,28 @@
         box-shadow: var(--shadowElevation_1);
         background-color: var(--color-accent-10);
         color: var(--bg-color-00);
+    }
+}
+
+@media (max-width: 850px) {
+    .donationContainer {
+        font-size: medium;
+    }
+
+    .toolPage h1 {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 600px) {
+    .toolPage h1 {
+        margin-top: 1rem;
+        font-size: large;
+    }
+}
+
+@media (max-width: 400px) {
+    .textToolPage h1 {
+        font-size: medium;
     }
 }
