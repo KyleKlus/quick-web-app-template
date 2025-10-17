@@ -23,19 +23,6 @@ export default function Page() {
         <Content className={[styles.toolPage, 'applyHeaderOffset', 'applyBottomPadding', 'dotted'].join(' ')}>
             <h1>QR Code Generator</h1>
             <Tools locale="de" />
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '1.5rem' }}>
-                <div className={styles.donationContainer}>
-                    <div>Du magst dieses Tool?</div>
-                    <a
-                        href='https://ko-fi.com/W7W1D5JTZ'
-                        target='_blank'
-                        className={styles.donateButton}
-                    >
-                        Spende ❤️
-                    </a>
-                </div>
-            </div>
-
         </Content>
     );
 }

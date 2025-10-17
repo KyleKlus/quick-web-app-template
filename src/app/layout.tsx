@@ -1,16 +1,17 @@
 /** @format */
 import Footer from '@/lib/layouts/footer/Footer';
-import Header from '@/lib/layouts/header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/lib/default-look.css';
 import './globals.css';
 
 import Main from '@/lib/container/Main';
+import style from './Layout.module.css';
 
 import { Fira_Code } from "next/font/google";
 import { ThemeProvider } from '@/lib/provider/theme-provider';
 import ThemeButton from '@/lib/interaction/forms/buttons/ThemeButton';
 import ScrollToTargetButton from '@/lib/interaction/forms/buttons/ScrollToTargetButton';
+import Logo from '@/lib/layouts/header/Logo';
 
 const firaCode = Fira_Code({ weight: '400', subsets: ['latin'] });
 
@@ -24,9 +25,10 @@ export default function Layout(props: React.PropsWithChildren<ILayoutProps>) {
         <html style={{ fontFamily: firaCode.style.fontFamily }}>
             <body>
                 <ThemeProvider>
-                    <Header >
+                    <div className={style.appHeader}>
+                        <Logo />
                         <ThemeButton />
-                    </Header >
+                    </div>
                     <Main>
                         <ScrollToTargetButton targetElementId='top' />
                         <div id={'top'}></div>
