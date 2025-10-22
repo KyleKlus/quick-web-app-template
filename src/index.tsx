@@ -10,7 +10,6 @@ if (!rootElement) throw new Error('No root element found');
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <script src="https://accounts.google.com/gsi/client" async></script>
     <ContextProviders>
       <App />
     </ContextProviders>

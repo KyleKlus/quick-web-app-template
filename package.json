@@ -1,64 +1,48 @@
 {
-	"name": "fast-calender-manager",
+	"name": "quick-web-app-template",
 	"version": "1.0.0",
 	"description": "This is a web app based tool for modifying my GCal faster, for blazingly fast week planning xD",
 	"type": "module",
 	"scripts": {
 		"build": "rsbuild build",
-		"docker-build": "docker build -t fast-calendar-manager .",
-		"docker-run": "docker run -d --restart unless-stopped -p 8080:8080 --name fast-calendar-manager-container fast-calendar-manager",
-		"docker-build-run": "docker build -t fast-calendar-manager . && docker run -d --restart unless-stopped -p 8080:8080 --name fast-calendar-manager-container fast-calendar-manager",
-		"docker-stop": "docker stop fast-calendar-manager-container",
-		"docker-rm": "docker rm fast-calendar-manager-container",
-		"docker-update": "docker stop fast-calendar-manager-container && docker rm fast-calendar-manager-container && docker image rm fast-calendar-manager && docker build -t fast-calendar-manager . && docker run -d --restart unless-stopped -p 8080:8080 --name fast-calendar-manager-container fast-calendar-manager",
-		"docker-push": "docker push kyleklus/fast-calendar-manager",
+		"docker-build": "docker build -t quick-web-app-template .",
+		"docker-run": "docker run -d --restart unless-stopped -p 8080:8080 --name quick-web-app-template-container quick-web-app-template",
+		"docker-build-run": "docker build -t quick-web-app-template . && docker run -d --restart unless-stopped -p 8080:8080 --name quick-web-app-template-container quick-web-app-template",
+		"docker-stop": "docker stop quick-web-app-template-container",
+		"docker-rm": "docker rm quick-web-app-template-container",
+		"docker-update": "docker stop quick-web-app-template-container && docker rm quick-web-app-template-container && docker image rm quick-web-app-template && docker build -t quick-web-app-template . && docker run -d --restart unless-stopped -p 8080:8080 --name quick-web-app-template-container quick-web-app-template",
+		"docker-push": "docker push kyleklus/quick-web-app-template",
 		"dev": "rsbuild dev --open",
 		"preview": "rsbuild preview",
 		"start": "rsbuild build && rsbuild start",
 		"deploy": "rsbuild deploy --mode github"
 	},
 	"dependencies": {
-		"@fullcalendar/bootstrap5": "^6.1.18",
-		"@fullcalendar/core": "^6.1.18",
-		"@fullcalendar/icalendar": "^6.1.18",
-		"@fullcalendar/interaction": "^6.1.18",
-		"@fullcalendar/react": "^6.1.18",
-		"@fullcalendar/timegrid": "^6.1.18",
-		"@types/react": "^19.1.9",
-		"@types/react-dom": "^19.1.7",
 		"bootstrap": "^5.3.7",
 		"bootstrap-icons": "^1.13.1",
-		"googleapis": "^105.0.0",
 		"luxon": "^3.7.1",
 		"react": "^19.1.0",
 		"react-bootstrap": "^2.10.10",
-		"react-datepicker": "^8.4.0",
-		"react-dom": "^19.1.0",
-		"react-google-calendar-api": "^2.3.0",
-		"reactjs-popup": "^2.0.6",
-		"typescript": "^5.8.3"
+		"react-dom": "^19.1.0"
 	},
 	"devDependencies": {
+		"@types/react": "^19.1.9",
+		"@types/react-dom": "^19.1.7",
 		"@rsbuild/core": "^1.4.3",
 		"@rsbuild/plugin-react": "^1.3.3",
-		"@types/gapi": "^0.0.47",
-		"@types/gapi.calendar": "^3.0.6",
-		"@types/gapi.client.tasks-v1": "^0.0.5",
-		"@types/google.accounts": "^0.0.6",
 		"@types/luxon": "^3.7.0",
 		"@types/node": "^18.13.0",
 		"@types/react-bootstrap": "^1.0.1",
-		"@types/react-datepicker": "^6.2.0",
-		"typescript": "^4.7.2"
+		"typescript": "^5.8.3"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/KyleKlus/fast-calender-manager.git"
+		"url": "git+https://github.com/KyleKlus/quick-web-app-template.git"
 	},
 	"author": "Kyle Klus",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/KyleKlus/fast-calender-manager/issues"
+		"url": "https://github.com/KyleKlus/quick-web-app-template/issues"
 	},
-	"homepage": "https://github.com/KyleKlus/fast-calender-manager#readme"
+	"homepage": "https://github.com/KyleKlus/quick-web-app-template#readme"
 }

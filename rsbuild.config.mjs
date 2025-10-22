@@ -9,12 +9,12 @@ export default defineConfig({
 	},
 	server: {
 		port: process.env.NODE_ENV === "development" ? 3000 : 8080,
-		base: "/fast-calender-manager/",
+		base: "/quick-web-app-template/",
 	},
 	output: {
 		cssModules: {
 			auto: true,
 		},
-		assetPrefix: "/fast-calender-manager/",
+		assetPrefix: "/quick-web-app-template/",
 	},
 });
